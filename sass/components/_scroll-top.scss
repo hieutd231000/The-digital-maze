@@ -1,0 +1,26 @@
+.scroll-top {
+    position: fixed;
+    right: -145px;
+    bottom: 150px;
+    transform: rotateZ(270deg);
+    transition: all .2s ease-in-out;
+    &__link {
+        background: $color-primary;
+        color: $color-white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border-radius: 0 5rem 5rem 0;
+        padding: 1.5rem 5rem 1.5rem 3rem;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        letter-spacing: 1rem;
+        &:hover {
+            color: $color-white;
+            background: $color-blue-dark;
+            border: $color-blue-dark;
+        }
+    }
+    &--hide {
+        visibility: hidden;
+    }
+}

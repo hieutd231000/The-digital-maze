@@ -1,0 +1,55 @@
+.text-primary {
+    font-size: 6rem;
+    font-weight: 600;
+    color: $color-white;
+    line-height: 8rem;
+    &--main {
+        display: block;
+    }
+    &--sub {  
+        color: $color-primary;
+    }
+}
+
+.text-secondary {
+    font-size: 6rem;
+    color: $color-black-dark;
+    line-height: 8rem;
+    &--sub {  
+        color: $color-primary;
+    }
+}
+
+.text-tertiary {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $color-black-dark;
+    line-height: 2;
+    &--sub {
+        color: $color-primary;
+    }
+}
+
+.text-fourth {
+    font-size: 6rem;
+    color: $color-white;
+    line-height: 8rem;
+    &--sub {  
+        color: $color-primary;
+    }
+}
+
+.text {
+    font-size: $default-font-size;
+    line-height: 4rem;
+    font-weight: 300;
+    &--white {
+        color: $color-white;
+    }
+    &--primary{
+        color: $color-primary;
+    }
+    &--no-line-height {
+        line-height: 0 !important;
+    }
+}

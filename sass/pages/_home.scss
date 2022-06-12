@@ -1,0 +1,45 @@
+.section-about {
+    height: 80vh;
+    background-color: $color-white;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    padding: 12rem 10rem;
+}
+
+.section-feature {
+    height: 170vh;
+    background-color: $color-white;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    padding: 12rem 10rem;
+    &__textbox {
+        padding: 5rem 15rem;
+    }
+    &__btnbox {
+        text-align: center;
+    }
+}
+
+.section-story {
+    width: 90%;
+    margin: 0 auto;
+    padding: 12rem 10rem;
+    &__box {
+        background-color: $color-black-dark;
+        height: 35vh;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4.5rem;
+        &-text {
+            font-size: 2.5rem;
+            color: $color-white;
+            font-weight: 700;
+            line-height: 2;        
+        }  
+    }
+}

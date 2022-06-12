@@ -1,0 +1,66 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.5rem 4.5rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        transition: all .2s ease-out;
+    }
+    &--white {
+        color: $color-white;
+        border: .2rem solid $color-white;
+        background-color: transparent;
+        &:hover {
+            background-color: #0a4978;
+            border: .2rem solid #0a4978;
+        } 
+    }
+    &--primary {
+        color: $color-white;
+        background-color: $color-primary;
+        border: .1rem solid $color-primary;
+        &:hover {
+            background-color: #0a4978;
+            border: .1rem solid #0a4978;
+        } 
+    }
+    &--blue {
+        color: $color-blue-dark;
+        border: .2rem solid $color-blue-dark;
+        &-style1{
+            &:hover {
+                color: $color-primary;
+                border: .2rem solid $color-primary;
+            }
+        }
+        &-style2{
+            &:hover {
+                color: $color-white;
+                background-color: #0a4978;
+            }
+        }
+    }
+    &--green {
+        color: $color-primary;
+        border: .2rem solid $color-primary;
+        &:hover {
+            color: $color-white;
+            background-color: #0a4978; 
+            border: .2rem solid #0a4978;      
+        }
+    }
+     
+    &--submit {
+        border-radius: 0 5rem 5rem 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}    
