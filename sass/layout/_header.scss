@@ -15,6 +15,16 @@
             top: 50%;
             right: -20%;
             transform: translate(-50%, -50%);
+            &--show {
+                display: block;
+                @include respond(tab-port) { //width < 1000
+                    display: none;
+                } 
+            }
+        }
+        
+        @include respond(tab-port) {
+            height: 10vh;
         }
     }
     &__list {
@@ -39,6 +49,12 @@
     &__content {
         background-image: url(../../img/hero.jpg);
         height: 100vh;
+        @include respond(tab-port) { // width < 1000?
+            height: 45vh;
+        }
+        @include respond(phone) { // width < 600?
+            height: 25vh;
+        }
         background-size: cover;
         background-position: top;
         position: relative;

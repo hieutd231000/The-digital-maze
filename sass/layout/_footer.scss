@@ -1,12 +1,12 @@
 .footer {
     background-color: $color-black-dark;
     padding: 12rem 3rem 0rem 3rem;
-    // &__box {
-    //     padding-right: 8rem;
-    // }
     &__form {
         margin-top: 8rem;
         position: relative;
+        @include respond(tab-port) { // width < 1000?
+            margin-top: 0rem !important;
+        }
     }
     
     &__label {
@@ -32,13 +32,7 @@
         }
         &:not(:first-child) {
             margin-top: 2rem;
-        }
-        &-text {
-            color: $color-white;
-            font-weight: 300;
-            font-size: $default-font-size;
-            text-decoration: none;
-        }   
+        }  
     }
     &__contact {
         width: 92%;
@@ -50,6 +44,9 @@
         &-list {
             list-style: none;
             text-align: right;
+            @include respond(tab-port) { // width < 1000
+                text-align: left;
+            }
         }
         &-item {
             display: inline-block;

@@ -1,14 +1,16 @@
 .section-about {
-    height: 80vh;
     background-color: $color-white;
     width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid black;
     padding: 12rem 10rem;
+    @include respond(tab-port) { // width < 1000?
+        text-align: center !important;
+        padding: 12rem 15rem;
+    }
 }
 
 .section-feature {
-    height: 170vh;
     background-color: $color-white;
     width: 90%;
     margin: 0 auto;
@@ -16,6 +18,12 @@
     padding: 12rem 10rem;
     &__textbox {
         padding: 5rem 15rem;
+        @include respond(tab-port) { // width < 1000?
+            padding: 5rem 10rem !important;
+        }
+        @include respond(phone) { // width < 600
+            padding: 5rem 0rem !important;
+        }
     }
     &__btnbox {
         text-align: center;
@@ -26,20 +34,16 @@
     width: 90%;
     margin: 0 auto;
     padding: 12rem 10rem;
+    @include respond(phone) { // width < 600
+        padding: 12rem 5rem !important;
+    }
     &__box {
         background-color: $color-black-dark;
-        height: 35vh;
         border-radius: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 4.5rem;
-        &-text {
-            font-size: 2.5rem;
-            color: $color-white;
-            font-weight: 700;
-            line-height: 2;        
-        }  
+        padding: 4.5rem 6rem; 
     }
 }

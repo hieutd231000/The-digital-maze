@@ -1,8 +1,23 @@
 .scroll-top {
     position: fixed;
     right: -145px;
-    bottom: 150px;
-    transform: rotateZ(270deg);
+    bottom: 140px;
+
+    @include respond(tab-land) { // width < 1200?
+        right: -130px;
+        bottom: 140px;
+    }
+
+    @include respond(tab-port) { // width < 1000?
+        right: -115px;
+        bottom: 125px;
+    }
+
+    @include respond(phone) { // width < 600?
+        right: -85px;
+        bottom: 95px;
+    }
+    transform: rotateZ(-90deg);
     transition: all .2s ease-in-out;
     &__link {
         background: $color-primary;

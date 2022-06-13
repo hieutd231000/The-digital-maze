@@ -5,6 +5,16 @@
     transition: all .2s ease-out;
     &__icon {
         width: 25%;
+        @include respond(tab-port) { // width < 1000?
+            width: 10%;
+            float: left;
+            margin-right: 3rem;
+        }
+        @include respond(phone) { // width < 600?
+            width: 15%;
+            float: left;
+            margin-right: 3rem;
+        }
     }
     &:hover {
         transform: translateY(-1.5rem) scale(1.05);
