@@ -71,7 +71,7 @@
             border: .3rem solid $color-primary;
         }
         @include respond(phone) { // width < 600?
-            border: .4rem solid $color-primary;
+            border: .5rem solid $color-primary;
         }
     }
 }    
