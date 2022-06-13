@@ -1,10 +1,10 @@
 .header{
     &__navbar {
-        height: 12vh;
+        height: 10vh;
         background-color: $color-black-dark;
         position: relative;
         &-logo {
-            width: 10%;
+            width: 9%;
             @include respond(tab-port) {
                 width: 15% !important;
             }
@@ -48,8 +48,8 @@
         &:visited {
             text-decoration: none;
             color: $color-white;
-            font-size: $default-font-size;
-            font-weight: 600;
+            font-size: 1.3rem;
+            font-weight: bold;
         } 
     }
 

@@ -7,7 +7,7 @@
         text-decoration: none;
         display: inline-block;
         &:not(:last-child) {
-            margin-right: 3rem;
+            margin-right: 2rem;
             @include respond(phone) {
                 margin-right: 0 !important;
                 margin-bottom: 1rem;
@@ -17,29 +17,36 @@
     }
     &--white {
         color: $color-white;
-        border: .2rem solid $color-white;
+        border: .25rem solid $color-white;
         background-color: transparent;
         &:hover {
             background-color: #0a4978;
-            border: .2rem solid #0a4978;
+            border: .25rem solid #0a4978;
         } 
     }
     &--primary {
         color: $color-white;
         background-color: $color-primary;
-        border: .1rem solid $color-primary;
-        &:hover {
-            background-color: #0a4978;
-            border: .1rem solid #0a4978;
-        } 
+        &-style1 {
+            border: .25rem solid $color-primary;
+            &:hover {
+                background-color: #0a4978;
+                border: .25rem solid #0a4978;
+            }
+        }
+        &-style2 {
+            &:hover {
+                background-color: #0a4978;
+            }
+        }
     }
     &--blue {
         color: $color-blue-dark;
-        border: .2rem solid $color-blue-dark;
+        border: .25rem solid $color-blue-dark;
         &-style1{
             &:hover {
                 color: $color-primary;
-                border: .2rem solid $color-primary;
+                border: .25rem solid $color-primary;
             }
             @include respond(tab-port) { // width < 1000?
                 margin-top: 4rem !important;
@@ -54,24 +61,20 @@
     }
     &--green {
         color: $color-primary;
-        border: .2rem solid $color-primary;
+        border: .25rem solid $color-primary;
         &:hover {
             color: $color-white;
             background-color: #0a4978; 
-            border: .2rem solid #0a4978;      
+            border: .25rem solid #0a4978;      
         }
     }
      
     &--submit {
         border-radius: 0 5rem 5rem 0;
+        height: 5.5rem;
+        border: 0 !important;
         position: absolute;
         top: 0;
         right: 0;
-        @include respond(tab-port) { // width < 1000?
-            border: .3rem solid $color-primary;
-        }
-        @include respond(phone) { // width < 600?
-            border: .5rem solid $color-primary;
-        }
     }
 }    

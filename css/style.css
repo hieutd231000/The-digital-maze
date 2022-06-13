@@ -30,7 +30,7 @@ GRID
   box-sizing: inherit; }
 
 html {
-  font-family: europa, sans-serif;
+  font-family: "europa",sans-serif;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
@@ -60,7 +60,7 @@ body {
   @media only screen and (max-width: 75em) {
     .text-primary {
       font-size: 5rem !important;
-      line-height: 6rem !important; } }
+      line-height: 8rem !important; } }
   @media only screen and (max-width: 62.5em) {
     .text-primary {
       font-size: 4.5rem !important;
@@ -79,7 +79,7 @@ body {
   @media only screen and (max-width: 75em) {
     .text-secondary {
       font-size: 5rem !important;
-      line-height: 6rem !important; } }
+      line-height: 7rem !important; } }
   @media only screen and (max-width: 62.5em) {
     .text-secondary {
       font-size: 4.5rem !important;
@@ -124,6 +124,8 @@ body {
   font-weight: 300; }
   .text--white {
     color: #fff; }
+  .text--grey {
+    color: #d3d3d3; }
   .text--primary {
     color: #5fbc65; }
   .text--no-line-height {
@@ -146,7 +148,7 @@ body {
   line-height: 2; }
 
 .footer__item-text {
-  color: #fff;
+  color: #d3d3d3;
   font-weight: 300;
   font-size: 1.6rem;
   text-decoration: none; }
@@ -155,10 +157,10 @@ body {
   text-align: center; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
@@ -221,7 +223,7 @@ body {
   display: inline-block;
   transition: all .2s ease-out; }
   .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
-    margin-right: 3rem; }
+    margin-right: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
         margin-right: 0 !important;
@@ -229,26 +231,29 @@ body {
 
 .btn--white {
   color: #fff;
-  border: 0.2rem solid #fff;
+  border: 0.25rem solid #fff;
   background-color: transparent; }
   .btn--white:hover {
     background-color: #0a4978;
-    border: .2rem solid #0a4978; }
+    border: .25rem solid #0a4978; }
 
 .btn--primary {
   color: #fff;
-  background-color: #5fbc65;
-  border: 0.1rem solid #5fbc65; }
-  .btn--primary:hover {
-    background-color: #0a4978;
-    border: .1rem solid #0a4978; }
+  background-color: #5fbc65; }
+  .btn--primary-style1 {
+    border: 0.25rem solid #5fbc65; }
+    .btn--primary-style1:hover {
+      background-color: #0a4978;
+      border: .25rem solid #0a4978; }
+  .btn--primary-style2:hover {
+    background-color: #0a4978; }
 
 .btn--blue {
   color: #0a4978;
-  border: 0.2rem solid #0a4978; }
+  border: 0.25rem solid #0a4978; }
   .btn--blue-style1:hover {
     color: #5fbc65;
-    border: 0.2rem solid #5fbc65; }
+    border: 0.25rem solid #5fbc65; }
   @media only screen and (max-width: 62.5em) {
     .btn--blue-style1 {
       margin-top: 4rem !important; } }
@@ -258,23 +263,19 @@ body {
 
 .btn--green {
   color: #5fbc65;
-  border: 0.2rem solid #5fbc65; }
+  border: 0.25rem solid #5fbc65; }
   .btn--green:hover {
     color: #fff;
     background-color: #0a4978;
-    border: .2rem solid #0a4978; }
+    border: .25rem solid #0a4978; }
 
 .btn--submit {
   border-radius: 0 5rem 5rem 0;
+  height: 5.5rem;
+  border: 0 !important;
   position: absolute;
   top: 0;
   right: 0; }
-  @media only screen and (max-width: 62.5em) {
-    .btn--submit {
-      border: 0.3rem solid #5fbc65; } }
-  @media only screen and (max-width: 37.5em) {
-    .btn--submit {
-      border: 0.5rem solid #5fbc65; } }
 
 .feature-box {
   padding: 3rem 3rem 5rem 2rem;
@@ -302,9 +303,10 @@ body {
 .form__input {
   width: 100%;
   height: 5.5rem;
+  border: 0 !important;
   border-radius: 5rem;
   padding-left: 2.5rem;
-  border: 0.1rem solid #fff; }
+  display: block; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 0 0 0.25rem rgba(9, 74, 216, 0.4); }
@@ -351,11 +353,11 @@ body {
     visibility: hidden; }
 
 .header__navbar {
-  height: 12vh;
+  height: 10vh;
   background-color: #454545;
   position: relative; }
   .header__navbar-logo {
-    width: 10%;
+    width: 9%;
     position: absolute;
     top: 50%;
     left: 12%;
@@ -392,8 +394,8 @@ body {
 .header__link:link, .header__link:visited {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600; }
+  font-size: 1.3rem;
+  font-weight: bold; }
 
 .header__content {
   background-image: url(../../img/hero.jpg);
@@ -520,7 +522,7 @@ body {
   .footer__item:not(:first-child) {
     margin-top: 2rem; }
   .footer__contact {
-    width: 92%;
+    width: 89%;
     padding: 3rem 0;
     margin: 0 auto;
     border-top: 1px solid #fff; }
