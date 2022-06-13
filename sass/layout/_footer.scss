@@ -23,6 +23,14 @@
             bottom: -10px;
         }
     }
+    &__icon {
+        &-box {
+            margin-top: 3rem;
+            @include respond(tab-port) { // width < 1000?
+                margin-top: 1rem !important;
+            }
+        }
+    }
     &__list {
         list-style: none;
     }

@@ -3,6 +3,11 @@
     border: 1px solid black;
     border-radius: 3rem;
     transition: all .2s ease-out;
+
+    @include respond(phone) { // width < 600?
+        display: grid !important;
+    }
+
     &__icon {
         width: 25%;
         @include respond(tab-port) { // width < 1000?
@@ -11,7 +16,7 @@
             margin-right: 3rem;
         }
         @include respond(phone) { // width < 600?
-            width: 15%;
+            width: 20%;
             float: left;
             margin-right: 3rem;
         }

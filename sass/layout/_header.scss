@@ -5,6 +5,13 @@
         position: relative;
         &-logo {
             width: 10%;
+            @include respond(tab-port) {
+                width: 15% !important;
+            }
+            @include respond(phone) {
+                width: 25% !important;
+                left: 20% !important;
+            }
             position: absolute;
             top: 50%;
             left: 12%;
@@ -53,7 +60,7 @@
             height: 45vh;
         }
         @include respond(phone) { // width < 600?
-            height: 25vh;
+            height: 35vh;
         }
         background-size: cover;
         background-position: top;
@@ -62,6 +69,9 @@
             position: absolute;
             top: 50%;
             left: 30%;
+            @include respond(phone) {
+                left: 50% !important;
+            }
             transform: translate(-50%, -50%);
         }
     }

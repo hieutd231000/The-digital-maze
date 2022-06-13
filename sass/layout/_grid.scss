@@ -30,7 +30,7 @@
 
             @include respond(tab-port) { // width < 1000?
                 margin-right: 0 !important;
-                margin-bottom: $gutter-vertical-small !important;
+                margin-bottom: 2rem !important;
             }
         } 
     }

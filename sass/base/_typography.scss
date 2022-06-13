@@ -57,6 +57,9 @@
     @include respond(tab-port) { // width < 1000?
         margin-bottom: 0rem !important;
     }
+    @include respond(phone) { // width < 1000?
+        font-size: 1.8rem !important;
+    }
 }
 
 .text-fourth {

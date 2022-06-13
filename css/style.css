@@ -95,6 +95,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .text-tertiary {
       margin-bottom: 0rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .text-tertiary {
+      font-size: 1.8rem !important; } }
 
 .text-fourth {
   font-size: 6rem;
@@ -214,6 +217,10 @@ body {
   transition: all .2s ease-out; }
   .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
     margin-right: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
+        margin-right: 0 !important;
+        margin-bottom: 2rem; } }
 
 .btn--white {
   color: #fff;
@@ -266,6 +273,9 @@ body {
   border: 1px solid black;
   border-radius: 3rem;
   transition: all .2s ease-out; }
+  @media only screen and (max-width: 37.5em) {
+    .feature-box {
+      display: grid !important; } }
   .feature-box__icon {
     width: 25%; }
     @media only screen and (max-width: 62.5em) {
@@ -275,7 +285,7 @@ body {
         margin-right: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .feature-box__icon {
-        width: 15%;
+        width: 20%;
         float: left;
         margin-right: 3rem; } }
   .feature-box:hover {
@@ -342,6 +352,13 @@ body {
     top: 50%;
     left: 12%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 62.5em) {
+      .header__navbar-logo {
+        width: 15% !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__navbar-logo {
+        width: 25% !important;
+        left: 20% !important; } }
   .header__navbar-box {
     position: absolute;
     top: 50%;
@@ -381,12 +398,15 @@ body {
       height: 45vh; } }
   @media only screen and (max-width: 37.5em) {
     .header__content {
-      height: 25vh; } }
+      height: 35vh; } }
   .header__content-box {
     position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 37.5em) {
+      .header__content-box {
+        left: 50% !important; } }
 
 .row {
   max-width: 110rem;
@@ -416,7 +436,7 @@ body {
       @media only screen and (max-width: 62.5em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0 !important;
-          margin-bottom: 6rem !important; } }
+          margin-bottom: 2rem !important; } }
   .row [class^="s-col-"] {
     float: left; }
     .row [class^="s-col-"]:not(:last-child) {
@@ -480,6 +500,11 @@ body {
       height: 2px;
       background: #5fbc65;
       bottom: -10px; }
+  .footer__icon-box {
+    margin-top: 3rem; }
+    @media only screen and (max-width: 62.5em) {
+      .footer__icon-box {
+        margin-top: 1rem !important; } }
   .footer__list {
     list-style: none; }
   .footer__item:first-child {
@@ -649,6 +674,10 @@ body {
     .section-about {
       text-align: center !important;
       padding: 12rem 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-about {
+      text-align: center !important;
+      padding: 12rem 8rem !important; } }
 
 .section-feature {
   background-color: #fff;
