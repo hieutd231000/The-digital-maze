@@ -2,7 +2,7 @@
     &,
     &:link,
     &:visited {
-        padding: 1.5rem 4.5rem;
+        padding: 1rem 4rem;
         border-radius: 3rem;
         text-decoration: none;
         display: inline-block;
@@ -20,8 +20,8 @@
         border: .25rem solid $color-white;
         background-color: transparent;
         &:hover {
-            background-color: #0a4978;
-            border: .25rem solid #0a4978;
+            background-color: $color-white;
+            color: $color-black;
         } 
     }
     &--primary {
@@ -30,23 +30,24 @@
         &-style1 {
             border: .25rem solid $color-primary;
             &:hover {
-                background-color: #0a4978;
-                border: .25rem solid #0a4978;
+                background-color: $color-primary-dark;
+                border: .25rem solid $color-primary-dark;
             }
         }
         &-style2 {
             &:hover {
-                background-color: #0a4978;
+                background-color: $color-blue-dark;
             }
         }
     }
     &--blue {
         color: $color-blue-dark;
         border: .25rem solid $color-blue-dark;
+        font-weight: 600;
         &-style1{
             &:hover {
-                color: $color-primary;
-                border: .25rem solid $color-primary;
+                color: $color-white;
+                background-color: $color-blue-dark;
             }
             @include respond(tab-port) { // width < 1000?
                 margin-top: 4rem !important;
@@ -55,7 +56,7 @@
         &-style2{
             &:hover {
                 color: $color-white;
-                background-color: #0a4978;
+                background-color: $color-blue-dark;
             }
         }
     }
@@ -64,8 +65,7 @@
         border: .25rem solid $color-primary;
         &:hover {
             color: $color-white;
-            background-color: #0a4978; 
-            border: .25rem solid #0a4978;      
+            background-color: $color-primary; 
         }
     }
      
@@ -75,6 +75,6 @@
         border: 0 !important;
         position: absolute;
         top: 0;
-        right: 0;
+        right: -.2rem;
     }
 }    

@@ -1,5 +1,5 @@
 .text-primary {
-    font-size: 6rem;
+    font-size: 5.6rem;
     font-weight: 600;
     color: $color-white;
     line-height: 8rem;
@@ -58,6 +58,7 @@
     &--sub {
         color: $color-primary;
     }
+    padding: 0 2rem 0 0;
     @include respond(tab-port) { // width < 1000?
         margin-bottom: 0rem !important;
     }
@@ -112,10 +113,9 @@
     @include respond(tab-port) { // width < 1000?
         font-size: $default-font-size !important;
     }
-    font-weight: 600;
 }
 .section-story__box-text {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: $color-white;
     font-weight: 700;
     line-height: 2;        

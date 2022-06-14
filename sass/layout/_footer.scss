@@ -17,8 +17,9 @@
         &::before {
             position: absolute;
             content: "";
-            width: 35px;
+            width: 30px;
             height: 2px;
+            font-weight: 300;
             background: #5fbc65;
             bottom: -10px;
         }
@@ -43,10 +44,10 @@
         }  
     }
     &__contact {
-        width: 89%;
+        width: 85%;
         padding: 3rem 0;
         margin: 0 auto;
-        border-top: 1px solid $color-white;
+        border-top: 2px solid $color-white;
     }
     &__policy {
         &-list {
