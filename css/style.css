@@ -319,7 +319,7 @@ body {
 
 .scroll-top {
   position: fixed;
-  right: -145px;
+  right: -135px;
   bottom: 140px;
   transform: rotateZ(-90deg);
   transition: all .2s ease-in-out; }
@@ -389,7 +389,9 @@ body {
 .header__item {
   display: inline-block; }
   .header__item:not(:last-child) {
-    margin-right: 8rem; }
+    margin-right: 6rem; }
+  .header__item:last-child {
+    margin-right: 8rem !important; }
 
 .header__link:link, .header__link:visited {
   text-decoration: none;

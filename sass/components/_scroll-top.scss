@@ -1,6 +1,6 @@
 .scroll-top {
     position: fixed;
-    right: -145px;
+    right: -135px;
     bottom: 140px;
 
     @include respond(tab-land) { // width < 1200?
