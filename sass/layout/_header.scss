@@ -75,4 +75,14 @@
             transform: translate(-50%, -50%);
         }
     }
+
+    &__scrolling {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all 0.15s ease-in-out;
+        z-index: 99;
+        box-shadow: 0 1rem 1rem rgba($color: #ececec, $alpha: .15);
+    }
 }       

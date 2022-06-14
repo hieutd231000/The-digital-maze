@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/zpf0elj.css">
     <script src="https://kit.fontawesome.com/603f568d4e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>The Digital Maze</title>
@@ -205,7 +206,11 @@
     $(function() {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-            if (scroll > 100) 
+            if (scroll > 0) 
+                $(".header__navbar").addClass("header__scrolling");
+            else $(".header__navbar").removeClass("header__scrolling");
+
+            if (scroll > 1000) 
                 $(".scroll-top").removeClass("scroll-top--hide");
             else $(".scroll-top").addClass("scroll-top--hide");
         });

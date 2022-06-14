@@ -7,7 +7,6 @@
 }
 
 html {
-    font-family: "europa",sans-serif;
     font-size: 62.5%;
 
     @include respond(tab-land) { // width < 1200?
@@ -30,4 +29,5 @@ html {
 
 body {
     box-sizing: border-box;
+    font-family: "europa",sans-serif !important;
 }

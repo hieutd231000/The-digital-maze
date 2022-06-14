@@ -30,7 +30,6 @@ GRID
   box-sizing: inherit; }
 
 html {
-  font-family: "europa",sans-serif;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
@@ -46,7 +45,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "europa",sans-serif !important; }
 
 .text-primary {
   font-size: 6rem;
@@ -417,6 +417,15 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__content-box {
         left: 50% !important; } }
+
+.header__scrolling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+  z-index: 99;
+  box-shadow: 0 1rem 1rem rgba(236, 236, 236, 0.15); }
 
 .row {
   max-width: 110rem;
